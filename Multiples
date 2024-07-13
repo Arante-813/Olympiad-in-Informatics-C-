@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+
+int multiples(int a, int b, int k){
+    int t = 0;
+    for(int i = 0; k * i <= b; i++){
+        if(k * i >= a && k * i <= b){
+            t++;
+        }
+    }
+    return t;
+}
+int main() {
+    int a, b, k, t;
+    cin >> a >> b >> k;
+    t = multiples(a, b, k);
+    cout << t;
+    return 0;
+}
+
