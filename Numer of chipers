@@ -1,0 +1,20 @@
+#include <iostream>
+#include <math.h>
+
+using namespace std;
+
+int main() {
+    int a, t;
+    cin >> a;
+    for(int i = 2; i <= 16; i++){
+        for(int i2 = 0; pow(i, i2) <= a; i2++){
+          t = i2 + 1;
+        }
+        cout << "Base " << i << ": " << t <<" ciphers." << "\n";
+    }
+
+    return 0;
+}
+
+
+
